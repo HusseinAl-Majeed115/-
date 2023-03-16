@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>بحث</title>
+</head>
+<body>
+	<h1>واجهة بحث</h1>
+	<form>
+		<label for="searchInput">ادخل البحث:</label>
+		<input type="text" id="searchInput" name="searchInput"><br><br>
+		<button type="button" onclick="search()">ابحث</button>
+	</form>
+	<div id="results"></div>
+
+	<script>
+		function search() {
+			var input = document.getElementById("searchInput").value;
+			// يمكن استخدام البحث عن النص من خلال ال API الخاص بمحركات البحث مثل Google أو Bing أو Yahoo وهكذا
+			// يمكن استخدام النتائج المستلمة من ال API لعرض النتائج للمستخدم
+			document.getElementById("results").innerHTML = "تم العثور على النتائج للبحث عن: " + input;
+		}
+	</script>
+</body>
+</html>
